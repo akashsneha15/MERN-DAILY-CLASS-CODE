@@ -71,3 +71,128 @@ Types of tags:
                     Ex:<b></b>
 
             iii. other tags
+                    <div></div>, <p</p>, <span></span>, list tags , semantic tags, media tags, table tags , form tags....
+
+    2. Unpaired tags:
+            ->any tags having onlu=y opening tags is called as a upaired tags 
+            Ex : <br>, <input>, <hr>, <meta> , <col>.....etc
+
+
+Attributes in HTML:
+-------------------
+        -> Attributes are used to give additional information to the html tags
+        -> Attributes are always in opening tags
+        ->most of the HTML elements having Attributes
+        -> attributes are always key and value Paired
+
+        ex:<h1 align="center">HELLO</h1>
+
+ELEMENTS IN HTML:
+----------------
+        ->The opening tag , closing tag and content together is called as a HTML elements
+          Ex:<p>This is a paragraph</p>
+
+          Types of elements:
+                1. Inline level elements
+                        ->the elements that only consumes only content width
+                         EX: All formatting tags, <span></span>......etc
+                2. block level elements
+                        ->the elements which consume entire width of the browsers
+                        Ex: all heading tags, <div></div>, other tags....etc
+
+
+Image tags:
+-----------
+        -> <img> tag used to display images in webpage
+        -> img tag attributes:
+                1. src (source):
+                        -> src will accept image address as a value 
+                            1. absolute path:
+                                    ->Browser image address
+                            2. relative path
+                                    ->Downloaded image address 
+
+                2. alt 
+                3. height
+                4.width
+                5. style
+
+MARQUEE TAG :
+-------------
+        -> <marquee></marquee> are used to scroll the content 
+        -> Marquee Attributes
+                1. behavior : scroll (default value), slide, alternate
+                2. direction : left, right, up , down
+                3. scrollamount 
+                4.loop
+                5.height
+                6.width 
+                7. bgcolor
+
+
+
+LISTS IN HTML:
+----------
+        -> Lists are usded to display items or data in proper manner
+    TYPES:
+        1. orderd list 
+                ->ordered list are used to display items in sequence way
+                -><ol></ol> used to represent ordered list 
+                -><li></li>  it represents the list items
+
+                Ordered list Attributes:
+                ----------------------
+                    1. type:  1,a,A,i,I
+                    2.start
+                    3, reversed
+        2. unordered
+                ->unordered list used to display items with symbols
+                -><ul></ul> used to represent unordered list 
+                -><li></li>  it represents the list items
+
+                unordered list attributed:
+                ------------------------------
+                1.type: none, circle, disc(default value), square
+
+        3.description/definition list :
+                    ->are used to describe or define items
+                    ->1. <dl></dl>     : description list
+                       2. <dt></dt>    : description term
+                       3.<dd></dd>     : description data
+
+        4. nested list:
+                ->a list having one or more another list 
+
+
+TABLES IN HTML
+---------------
+        ->The Collection of cell or row or columns
+
+        Tags is table
+        -------------
+        1. <table></table>
+        2.<tr></tr>
+        3.<th></th>
+        4.<td></td>
+        5.<thead></thead>
+        6.<tbody></tbody>
+        7.<tfoot></tfoot>
+        8.<colgroup></colgroup>
+        9.<col>
+ 
+formula to create table : table>(tr>td*n)*n
+                Table attributes:
+                ----------------
+                1. border
+                2.cellspacing: used to apply space b/w cell in table
+                3.cellpadding: to apply space b/w cell border and content
+                4.align
+                5.bgcolor
+
+Creating repository in GUTHUB
+--------------------------------
+Step1: Create a new repository is GITHUB
+Step2: Open the project folder in command prompt
+Step 3: Configure GUTHUB credentials to GIT by entering a commands git config --global user.name"akashsneha15"
+Step 4:Initialize the git repository by entering a command git init
+Step 5: The command to add files or folders git add .

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table example</title>
+</head>
+<body>
+    <h1>IBM Employee details</h1>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <colgroup>
+        <col span="2" bgcolor="gree">
+        <col sapn="1" bgcolor="powderblue">
+        <col span="1" bgcolor="yellow">
+    </colgroup>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Address</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>E100</td>
+                <td>Sneha</td>
+                <td>80000</td>
+                <TD>VIZAG</TD>
+                <td rowspan="2">Developer</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+
+                </td>
+            </tr>
+            <TR>
+                <td>E200</td>
+                <td>Ram</td>
+                <td>70000</td>
+                <td>Bangalore</td>
+                <td>Full stack developer</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </TR>
+            <tr>
+                <td>E300</td>
+                <td>Laxmi</td>
+                <td>90000</td>
+                <TD>Singapore</TD>
+                <td>Frontend developer</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="blue" colspan="6">2026 @ Copyright</td>
+                
+            </tr>
+            
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    <br>
+    <hr>
+    <table border="10" cellspacing="0" cellpadding="50" align="center" bgcolor="magenta">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>
