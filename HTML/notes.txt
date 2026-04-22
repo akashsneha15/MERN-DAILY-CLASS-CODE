@@ -188,6 +188,51 @@ formula to create table : table>(tr>td*n)*n
                 3.cellpadding: to apply space b/w cell border and content
                 4.align
                 5.bgcolor
+                
+        Attributes in td/th:
+        --------------------
+                1. rowspan
+                2.colspan
+                3.align
+                4.bgcolor
+
+
+
+Forms in HTML:
+--------------
+        ->Froms areused to collect the user information digitally
+
+        Form Tags:
+        ---------
+                1. <form></form>
+                2.<fieldset></fieldset>  - used to design border of the formset
+                3. <legend></legend>     - used to label the form
+                4. <label></label>       - used to label the input field
+                5. <input>               - used to take input from the user
+                6. <button></button>     - used to display buttons in form
+                7. <textarea></textarea> - used to collect large data text from the user(this is flexible input box)
+                8. <select></select>     - used to select option in group of options(<option></option>) 
+
+Form Attributes:
+-----------------
+        1. action 
+        2. method
+
+Fieldset Attributes
+-------------------
+        1. style
+        2.id
+        3.class
+
+legend Attributes:
+-----------------
+        1.style
+        2.id
+        3.class
+        
+        
+
+
 
 Creating repository in GUTHUB
 --------------------------------
