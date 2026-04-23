@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Request Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Service Request Form</h2>
+
+    <form>
+        <!-- Customer Name -->
+        <label>Customer Name:</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <!-- Contact Number -->
+        <label>Contact Number:</label>
+        <input type="tel" name="contact" placeholder="Enter your number" required>
+
+        <!-- Issue Type Dropdown -->
+        <label>Issue Type:</label>
+        <select name="issue" required>
+            <option value="">Select Issue</option>
+            <option value="laptop">Laptop Repair</option>
+            <option value="internet">Internet Issue</option>
+            <option value="software">Software Problem</option>
+            <option value="hardware">Hardware Issue</option>
+        </select>
+
+        <!-- Description -->
+        <label>Description:</label>
+        <textarea name="description" rows="4" placeholder="Describe your issue..." required></textarea>
+
+        <!-- Priority -->
+        <label>Priority:</label><br>
+        <input type="radio" name="priority" value="low"> Low
+        <input type="radio" name="priority" value="medium"> Medium
+        <input type="radio" name="priority" value="high"> High
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Request</button>
+    </form>
+</div>
+
+</body>
+</html>

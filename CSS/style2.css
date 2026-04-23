@@ -1,0 +1,19 @@
+label::after{
+    color:aliceblue;
+    font-weight: bold;
+    font-size: 25px;
+}
+label:first-of-type::before{
+    content: "😉";
+}
+
+label:last-of-type::before{
+    content:"🐖";```````
+}
+
+button{
+    background-color: blue;
+    text-decoration: solid;
+    text-align: center;
+    color: aqua;
+}

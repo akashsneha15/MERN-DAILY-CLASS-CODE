@@ -331,6 +331,43 @@ media tags:
                         3. height
                         4.width
 
+                Anchor tags:
+                -------------
+                        ->are used to link yhe files....
+
+                        Attributes:
+                        ---------
+                        1. href
+                        2.target
+                        3.download
+
+
+
+
+Semantic tags :
+---------------
+        -> Used to build proper structureof code/ web pages
+        -> using semantic tages we can increase SEO(search engine optimization) and also increase the code readability
+        -> semantic tags are developer friendly
+
+
+Semantic tag attributes:
+------------------------
+        1.<header></header>
+        2. <footer></footer>
+        3.<nav></nav>
+        4.<main></main>
+        5.<section></section>
+        6.
+        7.
+        8.<aside></aside>
+        9.<article></article>
+        10.<strong></strong>
+        11.<em></em>
+
+
+svg
+
 
 Creating repository in GUTHUB
 --------------------------------

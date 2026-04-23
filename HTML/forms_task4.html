@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef2f3;
+        }
+        .form-container {
+            width: 450px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Survey / Service Request Form</h2>
+
+    <form>
+        <!-- Question 1 -->
+        <label>1. Customer Name:</label>
+        <input type="text" name="name" required>
+
+        <!-- Question 2 -->
+        <label>2. Contact Number:</label>
+        <input type="tel" name="contact" required>
+
+        <!-- Question 3 -->
+        <label>3. Issue Type:</label>
+        <select name="issue" required>
+            <option value="">Select</option>
+            <option>Laptop Repair</option>
+            <option>Internet Issue</option>
+            <option>Software Problem</option>
+            <option>Hardware Issue</option>
+        </select>
+
+        <!-- Question 4 -->
+        <label>4. Describe Your Issue:</label>
+        <textarea rows="4" name="description"></textarea>
+
+        <!-- Question 5 -->
+        <label>5. Priority Level:</label><br>
+        <input type="radio" name="priority"> Low <br>
+        <input type="radio" name="priority"> Medium <br>
+        <input type="radio" name="priority"> High <br><br>
+
+        <!-- Question 6 -->
+        <label>6. Satisfaction Level (1-5):</label>
+        <select name="rating">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
