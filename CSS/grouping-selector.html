@@ -3,11 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BITS Vizag</title>
+    <style>
+
+        *{
+            color:red !important ;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: linear-gradient(45deg,sandybrown,violet,palegreen);
+        }
+
+        td,tr,th{
+            padding:10px 50px;
+            
+        }
+    
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 5px 5px 5px pink;
+            color: aqua;
+        }
+
+        table{
+            border-radius: 20px;
+            border-top: 8px solid blueviolet;
+        
+        }
+        thead>tr{
+            color: blue;
+            background-color: burlywood;
+            
+        }
+
+        th:first-child{
+            border-top-left-radius: 20px;
+
+        }
+
+        th:last-child{
+            border-top-right-radius: 20px;
+        }
+        
+        tbody tr:nth-child(odd)
+        {
+        background-color: palegreen;
+        
+    }
+
+    tbody tr:nth-child(odd) td{
+        border-bottom: 2px solid red;
+    }
+
+    tfoot tr, tfoot td{
+                background-color: blueviolet;
+                color: aliceblue;
+                font-weight: bold;
+                border-radius: 0px 0px 20px 20px;
+            }
+
+
+
+            /* footer styling*/
+
+            footer{
+                margin-top:50px;
+                background-image:linear-gradient(transparent,aqua) ;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                margin:50px;
+            }
+
+            #containter-1 a{
+                color: aliceblue;
+                font-size: 25px;
+                font-family: monospace;
+                font-style: italic;
+                text-decoration: none;
+
+            }
+            #containter-1 ol{
+                list-style: none;
+            }
+            
+            #containter-1 a:hover{
+                text-shadow: 4px 4px 4px black;
+                font-size: 30px;
+                text-decoration: underline;
+            }
+
+            svg{
+                color: blue;
+                height: 35px;
+                width: 35px;
+            }
+
+            svg:hover{
+                height:55px;
+                width: 55px;
+                box-shadow: 4px 4px 4px black;
+
+            }
+            
+            td{
+                border-left: 4px solid purple;
+                border-right: 4px solid pink;
+                border-top:4px solid aqua ;
+                border-bottom: 4px solid lavender  ;
+            }
+
+            iframe{
+                border-radius: 20px;
+                border: none;
+            }
+
+            #table-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            
+
+    </style>
 </head>
 <body>
-    <h1 align="center">TIME TABLE</h1>
-    <table border="2" cellspacing="0" align="center" cellpadding="15">
+    <h1 align="center"> BITS COLLEGE VIZAG</h1>
+    <div id="table-container">
+        <table cellspacing="0" >
+        <colgroup>
+        <col span="3">
+        
+    </colgroup>
         <thead>
             <tr>
                 <th>Days</th>
@@ -17,50 +147,51 @@
                 <th>12:00 - 1:00</th>
                 <th>1:00 - 2:00</th>
             </tr>
+            
             </thead>
             <tbody>
                 <tr>
                     <td>Mon</td>
                     <td>DBMS</td>
                     <td >OS</td>
-                    <TD rowspan="6">lunch break</TD>
+                    <TD rowspan="6" bgcolor="powderblue">lunch break</TD>
                     <td>CNS</td>
                     <td>FSD</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Mon</td>
+                    <td>DBMS</td>
+                    <td >OS</td>
+                    <td>CNS</td>
+                    <td>FSD</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Mon</td>
+                    <td>DBMS</td>
+                    <td >OS</td>
+                    <td>CNS</td>
+                    <td>FSD</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Mon</td>
+                    <td>DBMS</td>
+                    <td >OS</td>
+                    <td>CNS</td>
+                    <td>FSD</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Mon</td>
+                    <td>DBMS</td>
+                    <td >OS</td>
+                    <td>CNS</td>
+                    <td>FSD</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Mon</td>
+                    <td>DBMS</td>
+                    <td >OS</td>
+                    <td>CNS</td>
+                    <td>FSD</td>
                 </tr>
 
 
@@ -76,9 +207,10 @@
             </tbody>
         
     </table>
+    </div>
     <footer>
 <!-- container 1 -->
-        <div>
+        <div id="containter-1">
             <ol>
                 <li><a href=""> Admissions</a></li>
                 <li><a href="">Examinations</a></li>
@@ -105,8 +237,8 @@
          </div>
 
          <!-- Container 3 -->
-
-          <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.446836318518!2d83.32945747370064!3d17.811596490449002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395befa9dda303%3A0x5781c56a5df412!2sBaba%20Institute%20of%20Technology%20%26%20Sciences!5e1!3m2!1sen!2sin!4v1777010752170!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
 
           </div>
     </footer>
