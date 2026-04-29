@@ -39,10 +39,174 @@ CSS SELECTORS:
 
 
     2. combinator selectors  
+    -----------------------
+        1.descendent selector(space)
+        2.child selector(>)
+        3.adjacent sibling selector(+)
+        4.general sibling selector(~)
         
     
         
-    3. pseudo class selectors          
-    4. pseudo element selectors        
-    5. attribute selectors      
+    3. pseudo class selectors     
+        ------------------------
+        i.Structural 
+            1. :first-child
+            2. :last-child
+            3. :first-of-Type
+            4. :last-of-type    
+            5. :nth-child
+        ii. Dynamic
+            1. :active       ----|
+            2. :visited      ----|->anchor tags
+            3. :focus             -> input tags
+            4. :hover
+4.psuedo element selector:(can apply either internal or external styling)
+   1 ::after
+   2 ::before
+   3 ::first-letter
+   4 ::first-line
+   5 ::maker  (only applicable for lists)
+   6 ::slection (applying stylings during selections)(only color and background-color are applicable)
+   7 ::placeholder  
+ 
+   5.Attribute selectors:
+   ---------------------
+     ->attribute selctors are used to target HTML element based on attributes.
+     ex: <h1 align="center"  id="heading"> HELLO </h1>
+     <h1  id="heading"> HELLO </h1>
 
+        syntax -> selector[attributename="value"]{......styling.....}
+     
+      types:
+        1.[attributename="value"]
+        2.[attributename^="value"] (targets first letter/value)
+        3.[attributename$="value"] (targets last value)
+        4.[attributename|="value"] (used to target the starting point which are in between the hyphen - ex:heading-tag style is applicable for heading and heading tag)
+        5.[attributename*="value"]
+ 
+ color values:
+ --------------
+   1.color name
+   2.rgb(red(0-255),green(0-255),blue(0-255))
+   3.rgba(red, green, blue,alpha)(alpha should be in the range 0-1)
+   4.hsl(hue(0-360),saturation(1-100%),lighteness(1-100%))
+   5.hsla(hue,saturation,lightness,alpha)
+   6.hexa code()
+   7.transparent
+   8.color()
+
+ text properties:
+------------------
+   ->text properties are used to apply stylings for 'text'
+  properties:
+  ------------
+  1.text-alignments
+     i.text-align: left, right, center, start, end, justify.
+     ii.word-spacing
+     iii.letter-spacing
+     iv.text-indent
+     v.line-height
+  2.text decoration properties
+    i.text-decoration-line: none,underline, overline, line-through
+    ii.text-decoration-color
+    iii.text-decoration-style: solid, double, dotted, dashed, wavy, none.
+    iv.text-decoration-thickness
+    v.text-decoration (short hand form)
+  3.text transform properties:
+    i. text-transform : lower case , uppercase , capitalized
+
+  4.text-overflow properties:
+   i.overflow       :visible , auto , hidden , scroll
+   ii.overflow-x
+   iii.overflow-y
+  5.font properties
+   i.font-size
+   ii.font-style
+   iii.font-weight
+   iv.font-family
+
+css BOX model:
+--------------
+  1.padding
+    ->the space between content and border 
+     padding properties:
+       1.padding-top
+       2.padding-bottom
+       3.padding-left
+       4.padding-right
+       5.padding(short hand form)
+
+
+  2.border
+    ->the space between margin and padding
+       border properties
+       ---------------
+         1.border-style : none,solid,
+         2.border-weight
+         3.border-color
+         4.border(short and form)
+
+         border radius properties:
+         -------
+         1.border-top-left-radius
+         2.border-top-right-radius
+         3.border-bottom-left-radius
+         4.border-bottom-right-radius
+         5.border-radius-shf
+  3.margin
+      1.margin-top
+      2.margin-bottom
+      3.margin-left
+      4.margin-right
+      5.margin(short hand form)   
+
+
+
+Flex Properties:
+
+    1. display :flex ;
+    2. flex direction
+    3. flex wrap 
+    4. justify content
+    5. align-items
+    6. flex-grow
+    7. flex-shrink
+    8.flex
+
+grid properties:
+    -> are used to display content in table format 
+
+    Properties:
+    1. display:grid
+    2.grid-template-columms
+    3.grid-template-rows
+    4.row-gap
+    5.column-gap
+
+    6.grid-row-start
+    7.grid-row-end
+    8.grid-column-start
+    9.grid-column-end
+position properties
+        position:relative, absolute , fixed, sticky
+        left
+        right
+        top
+        bottom
+
+
+animations
+    1. define animations using key frames
+    2. link that animation to html element
+
+
+media queries:
+  ->are used to build responsive web applications based on device widt(device viewport)
+  ->break points
+          1. smaller devices(mobile with brands) 0-450px
+          2. medium devices(tablets/IPad) 450px-850px
+          3. large devices(laptops) 860px-1200px
+          4.extralarge devices (digital screens) >1200px
+
+  -> @media screen min-width & max-width
+    

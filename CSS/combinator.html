@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*adjacent sibling selector*/
+        ol+h1{
+            color: red;
+            background-color: plum;
+        }
+
+        /*descendent selector*/
+        ul p{
+            color: aliceblue;
+            background-color: slateblue;
+        }
+
+        /*child selector*/
+        h4>p{
+            color: blue;
+            background-color: black;
+        }
+
+        ol>li{
+            color: blueviolet;
+            background-color: chocolate;
+            margin: 20px;
+        }
+
+        body>h1:first-child{
+            color: blueviolet;
+        }
+
+        /*general sibling selector*/
+        ol~h1{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <h1>Odered list</h1>
+        <ol>
+            <li>list 1</li>
+            <li>list 2</li>
+            <li>list 3</li>
+            <li>list 4</li>
+
+        </ol>
+    
+<h1>Unordered list</h1>
+<ul>
+    <li>
+        <h4>
+            <P>HJJFGFHYKHNNVJK</P></h4>
+    </li>
+    <li>unordered</li>
+    <li> unordered</li>
+    <li>unordered</li>
+
+</ul>
+<h1>Heading in 3rd position</h1>
+<h3>
+<h4><p>cfdsrkgjkbgkjg</p></h4>
+
+</h3>
+
+</body>
+</html>
