@@ -147,7 +147,8 @@ In JS we can define variables in 3 ways:
 
 String inbuilt functions:
 -------------------------
-
+    To check whether it is present or not 
+            str.includes()
     To display length:
             str.length()
 
@@ -261,5 +262,76 @@ DOM(Document Object Model)
     setItem is used to enter the values
     -> cannot insert duplicate keys
 
-                            
+    localStorage.setItems()
+
+Loops:
+------
+    ->Loops are used to iterate the statements no.of of times until the condition is satisfied
+            1. for loop 
+                    Syntax:
+                            for(initialization; condition; imcreament/ decreament operator){
+
+                            }
+            2. while loop : 
+                    Syntax: 
+                            while(condition){
+                                increament/decreament
+                            }
+            3. do while loop :
+                    Syntax:
+                    do{
+                        increament/decreament
+                    }while(condition)
+            4. for-in loop 
+                    ->  for-in loop is used to iterate stringss, arrays
+                    ->for in loop is used to fetch onlu index value
                     
+                    -
+
+                    Syntax:
+                    -------
+                        for(variable in string/array){
+
+                        }
+            5. for-of loop
+                    ->for-of loop is used to iterate stringss, arrays
+                    ->for-of loop is used to fetch only values
+
+                        Syntax:
+                            for(variable of string/array){
+
+                            }
+
+            6. forEach loop:
+            ->forEach() is higher order function used to iterate only for arrays/array-strings
+                ->used to print array , index and values
+                ->does not generate new array 
+
+                Syntax:
+                variableName.forEach((value,index,variableName)=>{
+
+                })
+
+
+MathFunctions:
+        ->Math.floor
+        ->Math.round
+        ->Math.random
+        ->Math.ceil
+                    
+Array inbuilt methods:
+---------------------
+        1. map()
+        2.filter()
+        3. reduce()
+                ->used to sum up all the products and reduce the size of the array
+                ->higher order function with function and value 
+
+
+spread operators : ES 6 feature
+----------------
+        -> used to merge/concatinate 
+        -> ...
+
+Array destructuring 
+    =>coverting entire array into values

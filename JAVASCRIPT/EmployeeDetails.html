@@ -65,11 +65,44 @@
    
 </tbody>
 </table>
-
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae similique mollitia quod cupiditate magnam. In nihil ducimus quo, obcaecati, adipisci velit nam totam cupiditate delectus voluptate recusandae dolores voluptatibus laudantium?</p>
+<button onclick="disappearParagraph()">Click Here</button>
 <script>
-   let rows= document.querySelectorAll("tbody tr")
 
-   document.querySelector("imput").value
+    function disappearParagraph(){
+    let para= document.querySelector("p")
+    para.style.display= (para.style.display=="block") ? "none":"block"
+
+
+    }
+   let rows= document.querySelectorAll("tbody tr");
+
+   rows[0].style
+   let input=document.querySelector("input");
+   input.addEventListener('keyup',()=>{  
+    let inputText=input.value.toLowerCase()
+
+    rows.forEach((row)=>{
+        let rowData=row.textContent;
+
+       let result= rowData.toLowerCase().includes(inputText);
+       
+       row.style.display=result?"":"none"
+
+    })
+
+   
+
+    
+})
+
+   /*input.onkeyup=()=>{
+   
+   }*/
+
+
+
+
 </script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[10,20,30,40];
+        let arr2=[
+            50,
+            null,
+             {name:"ravi",role:"developer"},
+             ()=>{
+            console.log("HELLO");
+        }
+        ]
+
+        //spread operators in array 
+        let arr3=[...arr1, ...arr2, "html", "css", true];
+        console.log(arr3);
+
+
+        //array de-structuring
+        let [a,b,c,d]=arr1;
+        console.log(a,b,c,d);
+
+        let [e,f,g]=arr2;
+        console.log(arr2)
+
+        let [i,j,k,h]=arr2;
+        h()
+
+
+        //spread operators in object
+
+        let emp={
+            name:"ravi",
+            phone:9847623   
+        }
+
+        let orderDetails={
+            productName:"mobile",
+            price:50000,
+            status:"shipped"
+        }
+
+        let orderHistory = {...emp,["name"]:"hello",["phone"]:9803762887};    //used in react JS further 
+        console.log(orderHistory);
+
+        let studentDetails=[
+            {name:"ravi", rollNo:"HU2025", marks:{CNN:50,CPP:60,DS:90,DAA:70}},
+            {name:"ravi", rollNo:"HU2025", marks:{CNN:50,CPP:60,DS:90,DAA:70}},
+            {name:"ravi", rollNo:"HU2025", marks:{CNN:50,CPP:60,DS:90,DAA:70}},
+            {name:"ravi", rollNo:"HU2025", marks:{CNN:50,CPP:60,DS:90,DAA:70}},
+            {name:"ravi", rollNo:"HU2025", marks:{CNN:50,CPP:60,DS:90,DAA:70}},
+            {name:"ravi", rollNo:"HU2025", marks:{CNN:50,CPP:60,DS:90,DAA:70}},
+            {name:"ravi", rollNo:"HU2025", marks:{CNN:50,CPP:60,DS:90,DAA:70}},
+            {name:"ravi", rollNo:"HU2025", marks:{CNN:50,CPP:60,DS:90,DAA:70}},
+        ]
+    </script>
+</body>
+</html>
