@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*let userDetails = function(userName, password){
+              console.log("This is a functional expression") 
+               return userName+" "+password
+               return "HELLO"
+        }
+            let result= userDetails("ravi","ravi@123");
+            console.log( userDetails("ramu","ramu@123"));
+            console.log(result);*/
+
+      //normal function
+
+      function employeeDetails(name, role, salary, address) {
+        return [name, role, salary, address];
+      }
+
+      console.log(employeeDetails("Teja", "developer", 90000, "kochi"));
+      //immediate invoking function/self calling function
+      (
+        function () {
+          let apiKey = "AIzaSyA3FkWSWPzN77FnSaHsxOm568_t222n9g";
+          console.log("This is immediate invoking function");
+          return apiKey;
+        }
+      )();
+         
+
+      //arrow function
+      let arrowFun = () => console.log("Arrow function");
+      arrowFun();
+
+      let test=(skills,name) => {
+        let a=10
+        let b=10
+        console.log(a,b);
+        console.log("Name:", name, "Skills:", skills);
+      }
+
+      test(["node js", "express js", "mongo db", "react js"], "vivek Ayan")
+
+      //nested function
+
+    function outerFun(){
+        function innerFun(){
+            
+        }
+        console.log("Outer function")
+        console.log("Inner Function");
+            innerFun()
+      } outerFun()
+
+      //higher order function
+
+      function homePage(){
+        console.log("Home page")
+
+      }
+      function loginPage(){
+        console.log("login page logic")
+      }
+      function registerPage(){
+        console.log("registerPage logic")
+
+      }
+
+      homePage(registerPage(),loginPage())
+
+      function display(fun1,fun2){
+       fun1();
+       fun2();
+        
+
+      }
+      display(()=>{
+        console.log("first call back function")
+      }, ()=>{
+        console.log("second call back funcion")
+      })
+
+      //generator function
+
+      function* generator(){
+        yield 10;
+        yield 50;
+        yield 60;
+        console.log("generator function")
+      }
+    let nextGen=generator();
+  console.log(nextGen.next().value)
+  console.log(nextGen.next().value)
+  console.log(nextGen.next().value)
+  console.log(nextGen.next().value)
+
+  //nextGen.next()
+
+
+      
+
+      
+    </script>
+  </body>
+</html>
