@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            
+            align-items: center;
+            justify-content: space-evenly;
+            
+
+        }
+
+        h2{
+            padding: 0px;
+
+        }
+
+        form{
+            background-color: aqua;
+            text-align: center;
+        
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form action="">
+        
+            <h2>Registration Page</h2>
+        <label for="">Username:</label>
+        <input type="text" placeholder="Enter your name" required id="Username"><br><br>
+
+        <label for="">Email:</label>
+        <input type="text" placeholder="Enter your Email" required ><br><br>
+
+        <label for="">Password:</label>
+        <input type="password" placeholder="Enter your pasword " required id="psw"><br><br>
+
+        <label for="">Phone No:</label>
+        <input type="number" placeholder="Enter your phone number" required><br><br>
+
+        <button onclick="registerUser()">Register</button>
+
+        <p align="center">Already have an account <a href="login.html">Login</a></p>
+
+        <script>
+            function registerUser(){
+           let Username= document.getElementById("Username")
+           let psw=document.getElementById("psw")
+           
+            if(Username=="" || Password== " "){
+                alert("All fields are required")
+            }
+            else{
+                
+                
+                
+                
+                console.log("Username",Username.value);
+                console.log("psw",psw.value);
+                alert("Registration Successfull")
+                
+                window.localStorage.setItem("Username",Username.value)
+                window.localStorage.setItem("Password",psw.value)
+                
+                
+                console.log("Username", storedName)
+           console.log("Password",storedPassword)
+      }
+    }
+        </script>
+        
+    </form>
+</body>
+</html>

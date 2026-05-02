@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <form action="">
+        <h1>Login Form</h1>
+
+        <label for="">Username:</label>
+        <input type="text" id="Username" placeholder="Enter your name" required>
+
+        <label for="">Password:</label>
+        <input type="password" id="Password" placeholder="Enter your password" required>
+
+        <button onclick="Login()">Login</button>
+
+        <p align="center"><a href="./userAuthenticationAsgn.html">Create Account</a></p>
+    </form>
+
+    <script>
+        function Login(){
+            let Username=document.getElementById("Username".value)
+            let Password= document.getElementById("Password".value)
+
+            let storedUser= localStorage.getItem("Username");
+            let storedPassword=localStorage.getItem("Password");
+
+            if(Username==storedUser && Password==storedPassword){
+                window.location.href("home.html")
+
+            }
+            else{
+                alert("Invalid Username and Password");
+            }
+
+        }
+    </script>
+</body>
+</html>
