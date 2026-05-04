@@ -1,0 +1,8 @@
+React JS 
+------------
+        ->is a library
+
+To create npx 
+-------------
+        -> npx create-react-app my_react_app
+        
