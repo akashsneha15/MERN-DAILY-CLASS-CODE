@@ -6,3 +6,23 @@ To create npx
 -------------
         -> npx create-react-app my_react_app
         
+Function Based Component:
+-------------------------
+
+Syntax 1:
+         
+         const ComponentName=()=>{
+                return(
+                        //html code
+                )
+
+         }
+         export default ComponentName;
+
+Syntax 2:
+         function ComponentName(){
+                return(
+                        //html code
+                )
+         }
+         export default ComponentName
