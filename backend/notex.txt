@@ -1,0 +1,54 @@
+// let studentDetails=[]
+let collegeDetails=[]
+app.use(express.json())
+
+// app.post("/add-student",(req,res)=>{
+//         const newStudent={
+//             stdName: req.body.name,
+//             strRollNo: req.body.rollNo,
+//             strBranch:req.body.branch,
+//             stdSkills: req.body.skills
+//         };
+//         studentDetails.push(newStudent);
+//         res.status(200).json({message:"student added successfully",newStudent});
+// })
+
+// app.post("/add-multiplestudents",(req,res)=>{
+//     const allNewStudents=req.body.allStudents;
+//     studentDetails.push(allNewStudents);
+//     res.status(200).json({message:"all students added successfully"})
+// })
+
+
+// app.get("/get-student",(req,res)=>{
+//     res.status(200).json
+//     ({students:studentDetails})
+// })
+
+app.post("/add-college",(req,res)=>{
+    const  {name,code,departments,address}=req.body;
+    collegeDetails.push({
+        colName:name,
+        colCode:code,
+        colDepartments:departments,
+        colAddress: address
+        
+    })
+    res.status(200).json({message:"college added sucessfully"})
+})
+app.get("/gey-colleges",(req,res)=>{
+    res.status(200).json({collegeDetails})
+})
+
+app.delete("/delete-student/",(req,res)=>{
+
+})
+// app.get("/",(req,res)=>{
+//     res.status(200).send("Server running get method called")
+// })
+
+// app.get("/get-users",(req,res)=>{
+//     res.status(200).json({
+//         name:"ravi",role:"developer",email:"ravi@gmail.com",phone:"9876544321",
+//     })
+// })
